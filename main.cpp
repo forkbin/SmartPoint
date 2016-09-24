@@ -40,19 +40,19 @@ public:
 	}
 	const T &operator*() const
 	{
-		return *(rp->p);
+		return *(rp->ptr);
 	}
 	T &operator*()
 	{
-		return *(rp->p);
+		return *(rp->ptr);
 	}
 	T *operator->()
 	{
-		return rp->p;
+		return rp->ptr;
 	}
 	const T *operator->() const
 	{
-		return rp->p;
+		return rp->ptr;
 	}
 	~SmartPtr()
 	{
@@ -88,5 +88,6 @@ int main()
 
 	shared_ptr<string> st(new string("wtf"));
 	cout << (*st).length() << endl;
+
 	return 0;
 }
