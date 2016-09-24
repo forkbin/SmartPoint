@@ -1,0 +1,2 @@
+# SmartPoint
+a trivial smartpoint
